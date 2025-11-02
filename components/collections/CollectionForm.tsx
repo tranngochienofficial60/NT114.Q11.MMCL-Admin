@@ -133,7 +133,7 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
             )}
           />
           <div className="flex gap-10">
-            <Button type="Tạo" className="bg-black text-white">
+            <Button type="submit" className="bg-black text-white">
               Tạo
             </Button>
             <Button
