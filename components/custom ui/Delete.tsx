@@ -52,14 +52,14 @@ const Delete: React.FC<DeleteProps> = ({ item, id }) => {
       </AlertDialogTrigger>
       <AlertDialogContent className="bg-white text-white">
         <AlertDialogHeader>
-          <AlertDialogTitle className="text-red-1">Are you absolutely sure?</AlertDialogTitle>
+          <AlertDialogTitle className="text-black">Bạn muốn xóa sản phẩm?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your {item}.
+            Không thể hoàn tác. Bạn sẽ xóa {item}.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction className="bg-red-1 text-white" onClick={onDelete}>Delete</AlertDialogAction>
+          <AlertDialogCancel className="text-black bg-white border-solid">Hủy</AlertDialogCancel>
+          <AlertDialogAction className="text-black bg-white border-solid" onClick={onDelete}>Xóa</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
