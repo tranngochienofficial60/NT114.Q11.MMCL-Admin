@@ -15,7 +15,7 @@ export const getTotalCustomers = async () => {
   const customers = await Customer.find()
   const totalCustomers = customers.length
 
-  console.log("customer: ", totalCustomers);
+  // console.log("customer: ", totalCustomers);
 
   return totalCustomers
 }
